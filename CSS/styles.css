@@ -1,0 +1,397 @@
+/* Палитра
+
+main    bcg-color: #fff;
+alt     bcg-color: #F5F4FA;
+footer  bcg-color: #2F303A;
+card    bcg-color: #fff;
+
+main    color: #212121;
+alt     color: #757575;
+accent  color: #2196F3;
+
+logo    color: #000000;
+               #2196F3;
+               #FFFFFF;
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+:root {
+  --m-bcg-col: #fff;
+  --alt-bcg-col: #f5f4fa;
+  --f-bcg-col: #2f303a;
+  --m-col: #212121;
+  --alt-col: #757575;
+  --acc-col: #2196f3;
+  --logo-h-col: #000000;
+  --logo-f-col: #fff;
+  --hero-col: #fff;
+  --btn-alt-col: #fff;
+  --btn-hover-bcg-col: #188ce8;
+  --foot-alph-col: rgba(255, 255, 255, 0.6);
+  --card-bcg-col: #fff;
+  --card-border-col: #eee;
+  --header-border-col: #ececec;
+}
+
+/* * {
+  outline: maroon solid 2px;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--m-col);
+  background-color: var(--m-bcg-col);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.sect-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.hiden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Header */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--header-border-col);
+}
+
+.header .container,
+.header .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+
+  margin-right: 93px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  text-decoration: none;
+  align-items: center;
+  color: var(--logo-h-col);
+}
+.logo-acc {
+  color: var(--acc-col);
+}
+
+.link.head-contacts {
+  color: var(--alt-col);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--m-col);
+}
+
+.link:hover,
+.link:focus,
+.link.foot-item:hover,
+.link.foot-item:focus {
+  color: var(--acc-col);
+}
+
+.active-page {
+  color: var(--acc-col);
+}
+
+.nav {
+  display: flex;
+}
+
+.header .list > :not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-item .link,
+.cont-item .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/*--- Main index.html zone --- */
+
+/* Hero */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  color: var(--hero-col);
+  background-color: var(--f-bcg-col);
+  text-align: center;
+}
+.hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  padding: 10px 32px;
+  min-width: 216px;
+  border: 0;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--hero-col);
+  background-color: var(--acc-col);
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--btn-hover-bcg-col);
+  cursor: pointer;
+}
+
+/* Advantges */
+
+.advantages .list {
+  display: flex;
+}
+
+.plus-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.plus-item {
+  display: block;
+  flex-basis: 270px;
+}
+.plus-title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.plus-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--alt-col);
+}
+
+/* What we do */
+
+.services {
+  padding-top: 0;
+}
+
+.services-items {
+  display: flex;
+}
+.services-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Staff */
+.staff {
+  background-color: var(--alt-bcg-col);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.staff-item {
+  display: block;
+  width: 270px;
+  padding-bottom: 30px;
+
+  background-color: var(--m-bcg-col);
+}
+.staff-items {
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.position {
+  color: var(--alt-col);
+  line-height: 1.19;
+}
+
+/* Footer */
+
+.foot {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--f-bcg-col);
+}
+
+.foot .logo {
+  margin-bottom: 20px;
+}
+
+.address-foot-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.list.adress {
+  font-style: normal;
+}
+
+.link.foot-item,
+.logo.foot-item {
+  color: var(--logo-f-col);
+}
+
+.list.adress {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.foot-item-cont {
+  color: var(--foot-alph-col);
+}
+
+/*----- Main portfolio.html zone ----- */
+
+/* Filter */
+
+.filter-items {
+  display: flex;
+  flex-basis: 575px;
+  margin-bottom: 50px;
+
+  column-gap: 8px;
+  justify-content: center;
+}
+
+.filter-item {
+  padding: 6px 22px;
+  min-width: 73px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--alt-bcg-col);
+  color: var(--m-col);
+  border: none;
+  border-radius: 4px;
+}
+
+.filter-item:hover,
+.filter-item:focus {
+  background-color: var(--acc-col);
+  color: var(--btn-alt-col);
+  cursor: pointer;
+}
+
+/* Examples */
+
+.example-items {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.example-item {
+  background-color: var(--card-bcg-col);
+}
+
+.card-descr {
+  padding: 20px 24px;
+  border: 1px solid var(--card-border-col);
+  border-top: none;
+}
+.example-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.example-type {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--alt-col);
+}
