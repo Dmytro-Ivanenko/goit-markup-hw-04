@@ -132,6 +132,9 @@ img {
 }
 
 .link.head-contacts {
+  display: flex;
+  align-items: center;
+
   color: var(--alt-col);
 }
 
@@ -165,6 +168,14 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-icon {
+  margin-right: 10px;
+}
+
+.link.head-contacts:hover {
+  fill: var(--acc-col);
 }
 
 /*--- Main index.html zone --- */
