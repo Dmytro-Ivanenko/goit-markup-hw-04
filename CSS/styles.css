@@ -182,11 +182,21 @@ img {
 
 /* Hero */
 .hero {
+  width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--hero-col);
   background-color: var(--f-bcg-col);
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../imagies/hero/hero.jpg);
+  background-size: cover;
   text-align: center;
 }
 .hero-title {
@@ -237,7 +247,7 @@ img {
 
 .plus-item {
   display: block;
-  flex-basis: 270px;
+  width: 270px;
 }
 .plus-title {
   margin-bottom: 10px;
@@ -253,6 +263,15 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--alt-col);
+}
+
+.plus-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--alt-bcg-col);
 }
 
 /* What we do */
