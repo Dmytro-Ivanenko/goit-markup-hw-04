@@ -17,6 +17,10 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
+* {
+  outline: orange solid 2px;
+}
+
 :root {
   --m-bcg-col: #fff;
   --alt-bcg-col: #f5f4fa;
@@ -33,6 +37,7 @@ font-family: 'Roboto', sans-serif;
   --card-bcg-col: #fff;
   --card-border-col: #eee;
   --header-border-col: #ececec;
+  --icon-fill-staff: #afb1b8;
 }
 
 /* * {
@@ -321,6 +326,38 @@ img {
 .position {
   color: var(--alt-col);
   line-height: 1.19;
+}
+
+.social-media-items {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-media-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50% 50%;
+  fill: var(--icon-fill-staff);
+}
+
+.social-media:hover {
+  background-color: var(--acc-col);
+  fill: var(--btn-alt-col);
+}
+
+.social-icons {
+  display: block;
 }
 
 /* Footer */
