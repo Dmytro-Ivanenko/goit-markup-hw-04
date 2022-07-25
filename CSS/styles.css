@@ -180,7 +180,8 @@ img {
   margin-right: 10px;
 }
 
-.link.head-contacts:hover {
+.link.head-contacts:hover,
+.link.head-contacts:focus {
   fill: var(--acc-col);
 }
 
@@ -278,6 +279,8 @@ img {
   align-items: center;
   height: 120px;
   margin-bottom: 30px;
+
+  border-radius: 4px;
   background-color: var(--alt-bcg-col);
 }
 
@@ -329,6 +332,8 @@ img {
 }
 
 .position {
+  margin-bottom: 16px;
+
   color: var(--alt-col);
   line-height: 1.19;
 }
@@ -511,6 +516,11 @@ img {
 
 .example-item {
   background-color: var(--card-bcg-col);
+}
+
+.example.link:hover,
+.example.link:focus {
+  color: inherit;
 }
 
 .example-item:hover,
